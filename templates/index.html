@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MediCheck</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+  <h1>MediCheck</h1>
+  <p>Enter your symptom below</p>
+
+  <input type="text" id="symptom" placeholder="e.g. headache" />
+  <button onclick="check()">Check</button>
+
+  <div id="result"> </div>
+
+  <script>
+    async function check() {
+      const symptom = document.getElementById('symptom').value;
+      const result = await fetch('/check?symptom=' + symptom);
+      const text = await result.text();
+      document.getElementById('result').innerHTML = text;
+    }
+  </script>
+
+</body>
+
+<footer>
+@allright_reserved by Khaing_Su
+</footer>
+</html>

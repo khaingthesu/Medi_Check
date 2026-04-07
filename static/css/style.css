@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+h1 {
+  color: #c4472a;
+}
+
+p {
+  color: #666;
+}
+footer{
+font-size: 24px;
+}
+
+input {
+  width: 90%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #c4472a;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #a33820;
+}
+/*result id*/
+
+#result {
+  margin-top: 24px;
+  padding: 16px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
